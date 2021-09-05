@@ -130,10 +130,12 @@ dmypy.json
 .pyre/
 .idea/
 
-buffer.txt
 **/migrations/**
 !**/migrations
 !**/migrations/__init__.py
 
 Notes.md
 passwords.py
+
+media/
+static/

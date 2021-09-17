@@ -1,5 +1,6 @@
 from django.apps import AppConfig
 from django.dispatch import Signal
+
 from .utils import send_activation_notification
 
 user_registered = Signal(providing_args=['instance'])

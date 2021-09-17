@@ -1,7 +1,8 @@
 import datetime
 
-from accounts.models import CustomUser
 from core.models import BaseModel
+from accounts.models import CustomUser # noqa
+
 from core.utils import generate_uuid
 
 from dateutil.relativedelta import relativedelta
@@ -72,6 +73,7 @@ class Result(BaseModel):
 
         self.num_correct_answers += int(correct_answer)
         self.num_incorrect_answers += 1 - int(correct_answer)
+        self.current_order_number = order_number
 
         if order_number == question.exam.questions_count():
             self.state = self.STATE.FINISHED

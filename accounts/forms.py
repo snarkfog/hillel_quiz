@@ -1,7 +1,7 @@
-from django.contrib.auth.forms import UserChangeForm
-from django.contrib.auth import get_user_model
 from django import forms
+from django.contrib.auth import get_user_model
 from django.contrib.auth import password_validation
+from django.contrib.auth.forms import UserChangeForm
 from django.core.exceptions import ValidationError
 
 from .apps import user_registered
